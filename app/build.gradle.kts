@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
@@ -54,4 +57,7 @@ dependencies {
 
     // Para usar Coroutines en Room (opcional, pero recomendado)
     implementation("androidx.room:room-ktx:2.5.1")
+
+    // Dependencia para SwipeRefreshLayout
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 }
